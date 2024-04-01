@@ -1,0 +1,390 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: #000000;
+    font-family: 'Newsreader', serif;
+}
+
+/* -----------------General styles---------------------------- */
+body {
+    background-color: #ffffff;
+}
+
+h1 {
+    font-size: 40px;
+    text-align: center;
+    padding: 10px;
+}
+
+h2 {
+    font-size: 30px;
+    text-align: center;
+    padding: 10px;
+}
+h3{
+    font-size: 20px;
+    text-align: center;
+    text-transform: capitalize;
+    padding: 10px;
+}
+
+p {
+    font-size: 16px;
+    text-align: center;
+    padding: 10px;
+}
+.buttonStyle{
+  padding: 8px 30px;
+  border: solid 1px #000000;
+  text-transform: uppercase;
+  background-color: #000000;
+  color: #ffffff;
+  transition: 0.4s;
+}
+.buttonStyle:hover{
+  background-color: #ffffff;
+  color: #000000;
+}
+
+/* --------------------------------------Greeting Section--------------------------------------------- */
+/* .welcomeSection {
+    width: 100%;
+    height: 100vh;
+    padding: 20px;
+    background-color: transparent;
+    margin-bottom: 200px;
+    position: relative;
+}
+
+#videoBackground {
+    min-height: 100vh;
+    min-width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -2;
+}
+
+#myVideo {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+#headingText {
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: -1;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* background-color: gray; */
+
+
+
+.welcomeSection{
+  height: 100vh;
+  width: 100%;
+  background-color: antiquewhite;
+  overflow: hidden;
+}
+
+#myVideo {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  object-fit: cover;
+} 
+.welcomeHeading{
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top:0;
+  left: 0;
+  z-index: 2;
+}
+.welcomeHeading h1 {
+  color: #ffffff;
+  font-size: 65px;
+  text-align: center;
+  font-style: italic;
+  text-transform: capitalize;
+  text-shadow: 5px 5px 1px rgba(0, 0, 0, 0.5);
+}
+/* --------------------------------------------------------------------------------------------- */
+
+
+
+/* -----------------------------------Experience Section---------------------------------------- */
+.experienceSection {
+    position: relative;
+    height: 125vh;
+}
+
+#expBg {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: -1;
+    padding: 130px 100px 100px 100px;
+}
+
+#expBg img {
+    height: 100%;
+    width: 100%;
+}
+
+#customerExp {
+    text-align: center;
+    background-color: #ffffff;
+    padding: 50px;
+    margin: 0px 200px;
+}
+
+#customerExp p {
+    margin-top: 20px;
+}
+
+/* ------------------------------------------------------------------------------------------------------------ */
+
+/* ----------------------------------------------Social Media Section------------------------------------------ */
+.slider {
+    position: relative;
+    width: 100%;
+    height: 80vh;
+    overflow: hidden;
+  }
+  
+  .slider-container {
+    display: flex;
+    /* background-color: rgb(64, 134, 197); */
+    width: 300%;
+    height: 100%;
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .slider-item {
+    flex: 1;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .slider-item img {
+    width: 70%;
+    height: 100%;
+    object-fit: cover;
+}
+  
+  .slider-controls {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  
+  .slider-control-prev,
+  .slider-control-next {
+    background-color: transparent;
+    color:gold;
+    font-weight:bolder;
+    border: none;
+    font-size: 40px;
+    cursor: pointer;
+  }
+
+  .slider-control-prev {
+    margin-right: 40px;
+  }
+  
+  .slider-control-next {
+    margin-left: 40px;
+  }
+  .btnDiv{
+    height: 90px;
+    margin-top: 40px;
+    padding: 20px 0px;
+    text-align: center;
+  }
+
+  /* --------------Extracurricular activities section starts here-------------------------------- */
+  .extraActivitySection{
+    height: 120vh;
+    /* background-color: cadetblue; */
+  }
+  .extraActivitySecHeadings{
+    height: 20%;
+    padding: 10px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    /* background-color: aquamarine; */
+  }
+
+  .exActSecCardsWrapper{
+    height: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .exActItems{
+    height: 80%;
+    width: 24%;
+    /* background-color: aqua; */
+    margin: 10px 20px;
+  }
+  .exActCards{
+    height: 85%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    transition: 0.6s;
+  }
+  .exActCards:hover{
+    transform: scale(1.01);
+    box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.5), -1px -1px 10px rgba(0, 0, 0, 0.5);
+  }
+  .cardTop{
+    height: 55%;
+    width: 100%;
+  }
+  .exActCards img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+  }
+  .cardBottom{
+    height: 45%;
+    width: 100%;
+    padding-top: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+  }
+  .cardBottom::after{
+    content: "";
+    height: 0.5px;
+    width: 20%;
+    position: absolute;
+    top: 18%;
+    left: 50%;
+    z-index: 5;
+    transform: translateX(-50%);
+    background-color: #000000;
+    transition: 0.6s;
+  }
+  .exActCards:hover .cardBottom::after{
+    width: 70%;
+  }
+  .extActCardsBtns{
+    height: 15%;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    /* background-color: antiquewhite; */
+  }
+ 
+
+
+
+
+/* ---------------------------------------------All responsive designs----------------------------------------- */
+
+/* ---------------------------------------------Screen size max 768px------------------------------------------ */
+@media only screen and (max-width: 768px) {
+
+    /* ---------------Greeting Section------------ */
+
+    .welcomeSection {
+        margin-bottom: 0px;
+    }
+    /* --------------------------------------------------- */
+    .welcomeHeading h1 {
+      margin-top: 50px;
+      font-size: 45px;
+    }
+
+    /* -------------------------Greeting Section Ends--------------------------- */
+
+    /* ------------------------Experience Section Start-------------------------- */
+    #expBg {
+        padding: 0;
+    }
+
+    .experienceSection {
+        height: 60vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    #customerExp {
+        padding: 0px;
+        margin: 0px;
+        height: 40%;
+        width: 70%;
+    }
+
+    #expBg img {
+        display: none;
+    }
+
+    /* ------------------------Experience Section End-------------------------- */
+
+    .extraActivitySection{
+      height: auto;
+    }
+    .extraActivitySecHeadings{
+      height: 200px;
+    }
+    .exActSecCardsWrapper{
+      flex-direction: column;
+    }
+    .exActItems{
+      width: 70%;
+    }
+    .extActCardsBtns{
+      align-items: center;
+    }
+   
+
+
+
+
+
+}
+
+/* ----------------------------------------------------------------------------------------------------------- */
+
+
+
+/* -----------------------------Screen size between min 768px and max 1080px---------------------------------- */
+@media only screen and (max-width: 1080px) {
+
+    #headingText h1 {
+        margin-bottom: 60px;
+    }
+
+    .welcomeSection {
+        margin-bottom: 0px;
+    }
+    .exActItems{
+      height: 100vh;
+      width: 60%;
+    }
+    footer{
+      margin-top: 50px;
+    }
+
+}

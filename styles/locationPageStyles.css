@@ -1,0 +1,275 @@
+/* Container class to control the maximum width, padding, margin and overflow */
+.container {
+  max-width: 1280px; /* Sets the maximum width of the container */
+  padding: 0 1.5rem; /* Sets the left and right padding of the container */
+  margin: auto; /* Centers the container horizontally */
+  overflow: hidden; /* Hides the overflow content */
+  padding-top: 100px;
+}
+
+/* Shared button styles for btn-main, btn-light and btn-dark */
+.btn-main,
+.btn-light,
+.btn-dark {
+  display: inline-block; /* Sets the display property of the buttons to inline-block */
+  padding: 0.8rem 2rem; /* Sets the top/bottom and left/right padding of the buttons */
+  transition: all 0.5s; /* Sets a 0.5s transition effect for all properties */
+  border: none; /* Removes the border of the buttons */
+  cursor: pointer; /* Sets the cursor to a pointer when hovering over the buttons */
+}
+
+/* Specific styles for btn-main */
+.btn-main {
+  color: #333; /* Sets the text color of the btn-main */
+  background-color: #171203; /* Sets the background color of the btn-main */
+}
+
+/* Specific styles for btn-light */
+.btn-light {
+  color: #ffffff; /* Sets the text color of the btn-light */
+  background-color: #000000; /* Sets the background color of the btn-light */
+}
+
+/* Specific styles for btn-dark */
+.btn-dark {
+  color: #f4f4f4; /* Sets the text color of the btn-dark */
+  background-color: #333; /* Sets the background color of the btn-dark */
+}
+
+/* Styles for buttons, anchors, and inputs with class names starting with "btn-" on hover */
+button[class^="btn-"]:hover,
+a[class^="btn-"]:hover,
+input[class^="btn-"]:hover {
+  background-color: #1b1515; /* Sets the background color on hover */
+}
+
+/* Styles for elements with the bg-main class */
+.bg-main {
+  background: #000000; /* Sets the background color */
+  color: #fff; /* Sets the text color */
+}
+
+/* Styles for elements with the bg-dark class */
+.bg-dark {
+  background: #333; /* Sets the background color */
+  color: #fff; /* Sets the text color */
+}
+
+/* Styles for elements with the bg-light class */
+.bg-light {
+  background: #f4f4f4; /* Sets the background color */
+  color: #000000; /* Sets the text color */
+}
+
+/* Styles for elements with the bg-medium class */
+.bg-medium {
+  background: #ccc; /* Sets the background color */
+  color: #ffffff; /* Sets the text color */
+}
+
+/* Styles for elements with the lead class */
+.lead {
+  font-size: 1.5rem; /* Sets the font size */
+  margin-bottom: 2rem; /* Sets the bottom margin */
+}
+
+/* Styles for elements with the text-center class */
+.text-center {
+  text-align: center; /* Sets the text alignment to center */
+}
+
+/* Styles for elements with the py-1 class */
+.py-1 {
+  padding: 1rem 0; /* Sets the top and bottom padding to 1rem */
+}
+
+/* Styles for elements with the py-2 class */
+.py-2 {
+  padding: 2rem 0; /* Sets the top and bottom padding to 2rem */
+}
+
+/* Styles for elements with the py-3 class */
+.py-3 {
+  padding: 3rem 0; /* Sets the top and bottom padding to 3rem */
+}
+
+/* Styles for elements with the py-4 class */
+.py-4 {
+  padding: 4rem 0; /* Sets the top and bottom padding to 4rem */
+}
+
+/* Styles for elements with the items class */
+.items {
+  display: grid; /* Sets the display property to grid */
+  grid-template-columns: repeat(2, 1fr); /* Creates a 2-column grid layout */
+  box-shadow: 0 5px 10px 0 rgba(255, 255, 255, 0.3); /* Adds a box shadow effect */
+}
+
+/* Styles for elements with the item class */
+.item {
+  position: relative; /* Sets the position property to relative */
+  background: #ffffff; /* Sets the background color */
+  overflow: hidden; /* Hides the overflow content */
+  border-radius: 5px; /* Adds rounded corners */
+  padding: 15px 15px; /* Sets the padding for top/bottom and left/right */
+}
+
+/* Styles for the item pseudo-element */
+.item::after {
+  content: ""; /* Inserts generated content */
+  position: absolute; /* Sets the position property to absolute */
+  display: block; /* Sets the display property to block */
+  background: inherit; /* Inherits the background color from the parent */
+  opacity: 0.9; /* Sets the opacity */
+  top: 0; /* Sets the top position to 0 */
+  left: 0; /* Sets the left position to 0 */
+  width: 100%; /* Sets the width to 100% */
+  height: 100%; /* Sets the height to 100% */
+  transform: scale(2) translateX(-75%) translateY(-75%) rotate(-28deg); /* Sets the initial transform */
+  transition: transform 3s cubic-bezier(0.2, 1, 0.3, 1); /* Sets the transform transition */
+}
+
+/* Styles for the item on hover */
+.item:hover:after {
+  transform: scale(2) translateX(0) translateY(0) rotate(-28deg); /* Sets the transform on hover */
+}
+.item:hover .item-image {
+  transform: scale(1.2); /* Scales the item image on hover */
+}
+.item:hover .item-text {
+  opacity: 1; /* Sets the item text opacity to 1 on hover */
+  transform: translateY(0); /* Resets translateY to 0 on hover */
+}
+
+/* Styles for elements with the item-image class */
+.item-image {
+  height: auto; /* Sets the height property to auto */
+  transform: translateZ(0); /* Sets the 3D translation along the Z-axis to 0 */
+  display: block; /* Sets the display property to block */
+  transition: transform 750ms cubic-bezier(0.2, 1, 0.3, 1); /* Sets the transform transition */
+}
+
+/* Styles for the item-image pseudo-element */
+.item-image:before {
+  content: ""; /* Inserts generated content */
+  display: block; /* Sets the display property to block */
+  padding-top: 75%; /* Sets the top padding to 75% */
+  overflow: hidden; /* Hides the overflow content */
+}
+
+/* Styles for the img element inside item-image */
+.item-image img {
+  position: absolute; /* Sets the position property to absolute */
+  top: 0; /* Sets the top position to 0 */
+  left: 0; /* Sets the left position to 0 */
+  width: 100%; /* Sets the width to 100% */
+  height: auto; /* Sets the height property to auto */
+  line-height: 0; /* Sets the line height to 0 */
+}
+
+/* Styles for elements with the item-text class */
+.item-text {
+  position: absolute; /* Sets the position property to absolute */
+  top: 0; /* Sets the top position to 0 */
+  left: 0; /* Sets the left position to 0 */
+  bottom: 0; /* Sets the bottom position to 0 */
+  right: 0; /* Sets the right position to 0 */
+  opacity: 0; /* Sets the opacity to 0 */
+  text-align: center; /* Centers the text */
+  z-index: 1; /* Sets the z-index to 1 */
+  color: #ffffff; /* Sets the text color to white */
+  transform: translateY(-20%); /* Translates the element up by 20% */
+  transition: opacity 500ms cubic-bezier(0.2, 1, 0.3, 1),
+    transform 500ms cubic-bezier(0.2, 1, 0.3, 1); /* Sets the transition properties for opacity and transform */
+  transition-delay: 300ms; /* Sets a delay of 300ms for the transition */
+}
+
+/* Styles for elements with the item-text-wrap class */
+.item-text-wrap {
+  position: absolute; /* Sets the position property to absolute */
+  width: 100%; /* Sets the width to 100% */
+  top: 50%; /* Sets the top position to 50% */
+  transform: translateY(-50%); /* Translates the element up by 50% */
+}
+
+/* Styles for elements with the item-text-title class */
+.item-text-title {
+  font-size: 2rem; /* Sets the font size to 2rem */
+  padding: 0 1rem; /* Sets the padding to 0 on top/bottom and 1rem on left/right */
+  margin: 5px 0 0 0; /* Sets the margin to 5px on top and 0 on other sides */
+  padding-bottom: 20px; /* Adds a bottom padding of 20px */
+}
+
+/* Styles for elements with the item-text-category class */
+.item-text-category {
+  text-transform: uppercase; /* Transforms the text to uppercase */
+  font-size: 1.2rem; /* Sets the font size to 1.2rem */
+  opacity: 0.7; /* Sets the opacity to 0.7 */
+  margin: 0; /* Sets the margin to 0 */
+}
+
+/* Styles for all elements */
+* {
+  margin: 0; /* Resets the margin to 0 */
+  padding: 0; /* Resets the padding to 0 */
+}
+
+/* Styles for the body element */
+body {
+  font-family: "Dosis", sans-serif; /* Sets the font family to Dosis */
+  line-height: 1.6; /* Sets the line-height to 1.6 */
+  background: #fff; /* Sets the background color to white */
+}
+
+/* Styles for all anchor elements */
+a {
+  text-decoration: none; /* Removes the default text decoration */
+  color: #333; /* Sets the text color to #333 */
+}
+
+/* Styles for all unordered list elements */
+ul {
+  list-style: none; /* Removes the default list-style */
+}
+
+/* Styles for all heading elements */
+h2,
+h3,
+h4 {
+  text-transform: uppercase; /* Transforms the text to uppercase */
+}
+
+/* Styles for all image elements */
+img {
+  width: 100%; /* Sets the width to 100% */
+}
+
+/* Styles for elements with the hRuler id */
+#hRuler {
+  height: 2px; /* Sets the height to 2px */
+  border-radius: 2px; /* Sets the border radius to 2px */
+  background-color: #000000; /* Sets the background color to #000000 */
+  margin: 80px 5%; /* Sets the margin to 80px on top/bottom and 5% on left/right */
+}
+.section-title {
+  font-size: 40px;
+}
+
+/* Media query for screens with a maximum width of 800px */
+@media (max-width: 800px) {
+  /* Styles for elements with the header-home id inside the media query */
+  #header-home {
+    height: 30rem; /* Sets the height to 30rem */
+  }
+  #header-home .header-content {
+    padding-top: 5rem; /* Sets the top padding to 5rem */
+  }
+}
+
+/* Media query for screens with a maximum width of 500px */
+@media (max-width: 500px) {
+  /* Styles for elements with the items class inside the media query */
+  .items {
+    grid-template-columns: 1fr; /* Sets the grid-template-columns to 1fr */
+  }
+}

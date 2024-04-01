@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link style="border-radius: 10%;" rel="shortcut icon" type="img/png" href="assets/images/fss_logo.png">
+
+
+  <!-- custom css file link  -->
+  <link rel="stylesheet" href="./styles/payment.css" />
+  <link rel="stylesheet" type="text/css" href="./styles/navigationStyle.css">
+  <link rel="stylesheet" type="text/css" href="./styles/footerMenu.css">
+  <title>Payment | Four Seasons Suites</title>
+</head>
+
+<body>
+  <header>
+    <nav id="navBar">
+      <a href="homePage.html" id="navLogo">
+        <img src="assets/images/fss_logo.png" alt="Website Logo">
+      </a>
+      <div class="navLinksContainer" id="smallDeviceMenu">
+        <div id="smallDeviceMenuBar">
+          <i class="fa-solid fa-xmark" onclick="hideMenu()"></i>
+          <span> Menu </span>
+        </div>
+        <ul id="navItems">
+          <li><a href="aboutPage.html"> about </a></li>
+          <li><a href="contactPage.html"> contact</a></li>
+          <li><a href="overviewPage.html"> overview </a></li>
+          <li><a href="locationPage.html"> rooms</a></li>
+          <li><a href="restaurantPage.html"> restaurants </a></li>
+          <li><a href="loginPage.html"> login </a></li>
+          <li><a href="homePage.html"> home </a></li>
+        </ul>
+      </div>
+      <i class="fa-solid fa-bars" onclick="showMenu()"></i>
+    </nav>
+    <!-- -------------------------------------------------------------------------------------------- -->
+  </header>
+
+  <div class="container">
+    <form id="paymentForm" action="/submit" method="post">
+      <div class="row">
+        <div class="col">
+          <h3 class="title">billing address</h3>
+
+          <div class="inputBox">
+            <span>full name :</span>
+            <input type="text" placeholder="Sheikh" required />
+          </div>
+          <div class="inputBox">
+            <span>email :</span>
+            <input type="email" placeholder="example@enter.com" required />
+          </div>
+          <div class="inputBox">
+            <span>address :</span>
+            <input type="text" placeholder="room - street" />
+          </div>
+          <div class="inputBox">
+            <span>city :</span>
+            <input type="text" placeholder="Sahiwal" />
+          </div>
+
+          <div class="flex">
+            <div class="inputBox">
+              <span>state :</span>
+              <input type="text" placeholder="Pakisatn" />
+            </div>
+            <div class="inputBox">
+              <span>zip code :</span>
+              <input type="text" placeholder="N13 5TK" required />
+            </div>
+          </div>
+        </div>
+
+        <div class="col">
+          <h3 class="title">payment</h3>
+
+          <div class="inputBox">
+            <span>cards accepted :</span>
+            <img src="images/card_img.png" alt="" />
+          </div>
+          <div class="inputBox">
+            <span>name on card :</span>
+            <input type="text" placeholder="mr. Sheikh ABT" />
+          </div>
+          <div class="inputBox">
+            <span>credit card number :</span>
+            <input type="number" placeholder="1111-2222-3333-4444" />
+          </div>
+          <div class="inputBox">
+            <span>exp month :</span>
+            <input type="text" placeholder="May" required />
+          </div>
+
+          <div class="flex">
+            <div class="inputBox">
+              <span>exp year :</span>
+              <input type="number" placeholder="2025" required />
+            </div>
+            <div class="inputBox">
+              <span>CVV :</span>
+              <input type="text" placeholder="1234" required />
+            </div>
+          </div>
+        </div>
+      </div>
+      <input id ="submitPayment" type="submit" value="proceed to checkout" class="submit-btn" />
+    </form>
+  </div>
+
+  <div id="hRuler"></div>
+  <!-- --------------------------Footer Part-------------------------------- -->
+  <footer>
+    <div class="footerMenu">
+      <div class="footerPages">
+        <h2> pages </h2>
+        <div class="footerMenuContents">
+          <div class="contentsLeft">
+            <a href="homePage.html">home </a>
+            <a href="aboutPage.html">about </a>
+            <a href="contactPage.html">contact </a>
+          </div>
+          <div class="contentsRight">
+            <a href="locationPage.html">rooms</a> </a>
+            <a href="restaurantPage.html">restaurants </a>
+            <a href="overviewPage.html">overview </a>
+          </div>
+        </div>
+
+
+      </div>
+      <div class="footerContactInfo">
+        <h2> contact us </h2>
+        <div class="footerMenuContents">
+          <div class="contentsLeft">
+            <a href="#">Address </a>
+            <a href="#">+44(0)7777888999 </a>
+            <a style="text-transform: none;" href="#">fss@fourseasonssuites.com </a>
+          </div>
+        </div>
+
+      </div>
+      <div class="footerSocialMedia">
+        <h2> follow us </h2>
+        <div class="footerMenuContents">
+          <div class="contentsLeft">
+            <a href="https://www.instagram.com/accounts/login/" target="_blank" alt="Instagram">instagram </a>
+            <a href="https://en-gb.facebook.com/" target="_blank" alt="Facebook">facebook </a>
+            <a href="https://twitter.com/i/flow/login" target="_blank" alt="Twitter">twitter </a>
+          </div>
+          <div class="contentsRight ">
+            <a href="https://www.instagram.com/accounts/login/" target="_blank" alt="instagram"><i
+                class="fa-brands fa-instagram"></i></a>
+            <a href="https://en-gb.facebook.com/" target="_blank" alt="facebook"><i class="fa-brands fa-facebook"></i>
+            </a>
+            <a href="https://twitter.com/i/flow/login" target="_blank" alt="twitter"><i
+                class="fa-brands fa-twitter"></i> </a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="copyrightBanner">
+      <p> &copy; Copyright four feasons suites 2023 </p>
+      <p> All rights reserved. </p>
+    </div>
+  </footer>
+  <script src="./scripts/payment.js"></script>
+  <script src="./scripts/navigationScript.js"></script>
+  <script src="https://kit.fontawesome.com/abd188e387.js" crossorigin="anonymous"></script>
+</body>
+
+</html>

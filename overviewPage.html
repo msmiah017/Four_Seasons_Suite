@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" type="img/png" href="assets/images/fss_logo.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter&family=Montserrat&family=Newsreader&family=Quando&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="./styles/navigationStyle.css">
+    <link rel="stylesheet" type="text/css" href="./styles/footerMenu.css">
+    <link rel="stylesheet" type="text/css" href="./styles/overviewPageStyles.css">
+    <title>Overview | Four Seasons Suites</title>
+</head>
+
+<body>
+
+    <header>
+        <nav id="navBar">
+            <a href="homePage.html" id="navLogo">
+                <img src="assets/images/fss_logo.png" alt="Website Logo">
+            </a>
+            <div class="navLinksContainer" id="smallDeviceMenu">
+                <div id="smallDeviceMenuBar">
+                    <i class="fa-solid fa-xmark" onclick="hideMenu()"></i>
+                    <span> Menu </span>
+                </div>
+                <ul id="navItems">
+                    <li><a href="aboutPage.html"> about </a></li>
+                    <li><a href="contactPage.html"> contact</a></li>
+                    <li><a href="overviewPage.html"> overview </a></li>
+                    <li><a href="locationPage.html"> rooms</a></li>
+                    <li><a href="restaurantPage.html"> restaurants </a></li>
+                    <li><a href="loginPage.html"> login </a></li>
+                    <li><a href="homePage.html"> home </a></li>
+                </ul>
+            </div>
+            <i class="fa-solid fa-bars" onclick="showMenu()"></i>
+        </nav>
+    </header>
+    <!-- -------------------------------Greeting Section----------------------------------- -->
+    <section class="welcomeSection">
+        <video autoplay muted loop id="myVideo">
+            <source src="https://storage.googleapis.com/media_hotel_website/luxurious_hotels_short.mp4"
+                type="video/mp4">
+        </video>
+        <div class="welcomeHeading">
+            <h1>Discover a world of <br> comfort and <br> hospitality at our hotel</h1>
+        </div>
+    </section>
+
+    <!-- -------------------------------Experience Section----------------------------------- -->
+    <section class="experienceSection">
+        <div id="customerExp">
+            <h2> Find out what it's like to spend a <br> day at our hotel</h2>
+            <p id="inspirationalText">
+                Experience unparalleled luxury and comfort at our hotel where
+                every <br> detail has been thoughtfully crafted to exceed your expectations.
+            </p>
+        </div>
+        <div id="expBg">
+            <!-- <img src="assets/images/overview_page_imgs/swimming_pole.jpg"> -->
+            <img src="assets/images/mixed/308234590.jpg">
+        </div>
+    </section>
+    <div id="hRuler"></div>
+    <!-- -------------------------------------------------------------------------------------------- -->
+
+    <!-- -------------------------------Social Media Section----------------------------------- -->
+    <section style="margin-bottom: 50px;" class="socialMediaSection">
+        <h1> Instagram </h1>
+        <p> Follow us on social media </p>
+
+        <div class="slider">
+            <div class="slider-container">
+                <div class="slider-item">
+                    <img src="assets/images/mixed/308234594.jpg" alt="Image 1">
+                </div>
+                <div class="slider-item">
+                    <img src="assets/images/overview_page_imgs/img_alb_2.jpg" alt="Image 2">
+                </div>
+                <div class="slider-item">
+                    <img src="assets/images/overview_page_imgs/" alt="Image 3">
+                </div>
+            </div>
+            <div class="slider-controls">
+                <button class="slider-control-prev">&lt;</button>
+                <button class="slider-control-next">&gt;</button>
+            </div>
+        </div>
+
+        <div class="btnDiv">
+            <input class="buttonStyle natureSectionItems" type="submit" value="FOLLOW US">
+        </div>
+    </section>
+
+    <div id="hRuler"></div>
+
+    <!-- ---------------------Extracurricular Section Starts here----------------------- -->
+    <div class="extraActivitySection">
+        <div class="extraActivitySecHeadings">
+            <h2> Unforgettable Experience</h2>
+            <p>
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Non facere, in
+                <br>illum praesentium unde nostrum nisi incidunt quisquam!
+            </p>
+        </div>
+        <div class="exActSecCardsWrapper">
+
+            <div class="exActItems">
+                <div class="exActCards">
+                    <div class="cardTop">
+                        <img src="assets/images/overview_page_imgs/surfing_img.jpg" alt="Scuba Diving Image">
+                    </div>
+                    <div class="cardBottom">
+                        <h3>Surfing</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem rem sint impedit!</p>
+                    </div>
+
+                </div>
+                <div class="extActCardsBtns">
+                    <input class="buttonStyle natureSectionItems" type="submit" value="BROWSE MORE">
+                </div>
+            </div>
+            <div class="exActItems">
+                <div class="exActCards">
+                    <div class="cardTop">
+                        <img src="assets/images/overview_page_imgs/scuba_img.jpg" alt="Scuba Diving Image">
+                    </div>
+                    <div class="cardBottom">
+                        <h3>scuba diving</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem rem sint impedit!</p>
+                    </div>
+
+                </div>
+                <div class="extActCardsBtns">
+                    <input class="buttonStyle natureSectionItems" type="submit" value="BROWSE MORE">
+                </div>
+            </div>
+            <div class="exActItems">
+                <div class="exActCards">
+                    <div class="cardTop">
+                        <img src="assets/images/overview_page_imgs/sky_diving_img.jpg" alt="Scuba Diving Image">
+                    </div>
+                    <div class="cardBottom">
+                        <h3>Sky diving</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem rem sint impedit!</p>
+                    </div>
+                </div>
+                <div class="extActCardsBtns">
+                    <input class="buttonStyle natureSectionItems" type="submit" value="BROWSE MORE">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="hRuler"></div>
+    <!-- --------------------------Footer Part-------------------------------- -->
+    <footer>
+        <div class="footerMenu">
+            <div class="footerPages">
+                <h2> pages </h2>
+                <div class="footerMenuContents">
+                    <div class="contentsLeft">
+                        <a href="homePage.html">home </a>
+                        <a href="aboutPage.html">about </a>
+                        <a href="contactPage.html">contact </a>
+                    </div>
+                    <div class="contentsRight">
+                        <a href="locationPage.html">rooms</a> </a>
+                        <a href="restaurantPage.html">restaurants </a>
+                        <a href="overviewPage.html">overview </a>
+                    </div>
+                </div>
+
+
+            </div>
+            <div class="footerContactInfo">
+                <h2> contact us </h2>
+                <div class="footerMenuContents">
+                    <div class="contentsLeft">
+                        <a href="#">Address </a>
+                        <a href="#">+44(0)7777888999 </a>
+                        <a style="text-transform: none;" href="#">fss@fourseasonssuites.com </a>
+                    </div>
+                </div>
+
+            </div>
+            <div class="footerSocialMedia">
+                <h2> follow us </h2>
+                <div class="footerMenuContents">
+                    <div class="contentsLeft">
+                        <a href="https://www.instagram.com/accounts/login/" target="_blank" alt="Instagram">instagram
+                        </a>
+                        <a href="https://en-gb.facebook.com/" target="_blank" alt="Facebook">facebook </a>
+                        <a href="https://twitter.com/i/flow/login" target="_blank" alt="Twitter">twitter </a>
+                    </div>
+                    <div class="contentsRight ">
+                        <a href="https://www.instagram.com/accounts/login/" target="_blank" alt="instagram"><i
+                                class="fa-brands fa-instagram"></i></a>
+                        <a href="https://en-gb.facebook.com/" target="_blank" alt="facebook"><i
+                                class="fa-brands fa-facebook"></i> </a>
+                        <a href="https://twitter.com/i/flow/login" target="_blank" alt="twitter"><i
+                                class="fa-brands fa-twitter"></i> </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="copyrightBanner">
+            <p> &copy; Copyright four feasons suites 2023 </p>
+            <p> All rights reserved. </p>
+        </div>
+    </footer>
+
+    <!-- Linking the javascript files -->
+    <script src="./scripts/navigationScript.js"></script>
+    <script src="https://kit.fontawesome.com/abd188e387.js" crossorigin="anonymous"></script>
+</body>
+
+</html>

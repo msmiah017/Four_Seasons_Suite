@@ -1,0 +1,194 @@
+/* -------------------------------------------------*/
+.blurryBg {
+    display: none;
+    height: 100vh;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 500;
+    background-color: #24c2de8f;
+}
+.blurryBg:hover{
+    cursor: pointer;
+}
+
+#closeBtn {
+    text-align: right;
+}
+
+#closeBtn i {
+    font-size: 24px;
+    color: #ffffff;
+    padding-right: 10px;
+    padding-top: 4px;
+}
+#closeBtn i:hover{
+    cursor: pointer;
+}
+
+.bookingBox {
+    display: none;
+    height: 80vh;
+    width: 50%;
+    background: linear-gradient(to bottom right, #ff512f, #dd2476);
+    padding: 10px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    z-index: 1000;
+    border-radius: 5px;
+    transform: translate(-50%, -50%);
+}
+
+.bookingBoxTop {
+    /* background-color: cadetblue; */
+    display: grid;
+    grid-template-columns: 50% 50%;
+
+}
+
+.bookingBoxTop .bookingBoxParts {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 10%;
+}
+
+.bookingBox label {
+    color: #ffffff;
+}
+
+.bookingBoxTop .bookingBoxParts label {
+    display: block;
+    text-align: center;
+    font-size: 20px;
+    font-weight: bold;
+    text-transform: capitalize;
+    margin: 10px;
+}
+
+.bookingBoxTop .bookingBoxParts input {
+    width: 100%;
+    padding: 5px;
+    margin: 10px;
+    font-size: 20px;
+}
+
+.roomTypeLocation {
+    width: 100%;
+    /* background-color: #96e6a1; */
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+
+.roomTypeLocation div {
+    padding: 10%;
+    display: flex;
+    /* background-color: aqua; */
+    justify-content: space-between;
+    align-items: center;
+}
+
+.roomTypeLocation div label {
+    font-size: 20px;
+    width: 40%;
+}
+
+.roomTypeLocation div select {
+    width: 60%;
+    height: 40px;
+    margin-left: 10px;
+
+}
+
+.roomTypeLocation div select option {
+    font-size: 16px;
+    padding: 10px 0px;
+
+}
+
+.bookingSubmitBox {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+}
+
+#bookingSubmitId {
+    padding: 12px 50px 8px;
+    font-size: 20px;
+}
+
+.buttonStyle {
+    padding: 8px 30px;
+    margin-bottom: 10%;
+    border: solid 1px #000000;
+    text-transform: uppercase;
+    background-color: #000000;
+    color: #ffffff;
+    transition: 0.4s;
+}
+
+.buttonStyle:hover {
+    background-color: #ffffff;
+    color: #000000;
+}
+
+
+
+
+
+
+@media only screen and (max-width: 768px) {
+    .bookingSection {
+        height: auto;
+    }
+
+    .bookingBox {
+        height: 95vh;
+        width: 80%;
+        top: 3%;
+        transform: translateX(-50%);
+    }
+
+    .bookingBoxTop {
+        grid-template-columns: 100%;
+
+    }
+
+    .bookingBoxTop .bookingBoxParts {
+        padding: 2% 10%;
+    }
+
+    .bookingBoxTop .bookingBoxParts label {
+        font-size: 16px;
+        margin: 5px 10px;
+    }
+
+    .bookingBoxTop .bookingBoxParts input {
+        width: 100%;
+        padding: 5px;
+        margin: 5px;
+        font-size: 16px;
+    }
+
+    .roomTypeLocation {
+        grid-template-columns: 100%;
+    }
+
+    .roomTypeLocation div {
+        padding: 2% 10%;
+    }
+
+    .roomTypeLocation div label {
+        font-size: 18px;
+        width: 100%;
+    }
+
+    .roomTypeLocation div select {
+        padding: 0px 5px;
+        width: 85%;
+    }
+}

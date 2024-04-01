@@ -1,0 +1,382 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: #000000;
+  font-family: "Newsreader", serif;
+}
+
+h1,
+h2,
+h3,
+p {
+  text-align: center;
+  margin: 15px 0px;
+}
+
+/* -----------------General styles---------------------------- */
+body {
+  background-color: #ffffff;
+}
+
+.buttonStyle {
+  padding: 8px 30px;
+  border: solid 1px #000000;
+  text-transform: uppercase;
+  background-color: #000000;
+  color: #ffffff;
+  transition: 0.4s;
+}
+
+.buttonStyle:hover {
+  background-color: #ffffff;
+  color: #000000;
+}
+
+.headingSection {
+  height: 120vh;
+  width: 100%;
+  /* background: cadetblue url('../assets/images/about_page_imgs/luxury_hotel_2.jpg') no-repeat center; */
+  background: cadetblue url("../assets/images/mixed/339532965.jpg") no-repeat
+    center;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  margin-bottom: 200px;
+}
+
+.headingSection h1 {
+  color: #ffffff;
+  font-size: 70px;
+  text-align: center;
+  text-shadow: 5px 5px 10px #000000;
+}
+
+.moreInforBox {
+  height: 50%;
+  width: 60%;
+  background-color: #ffffff;
+  position: absolute;
+  left: 50%;
+  bottom: -20%;
+  transform: translateX(-50%);
+  z-index: 2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  transition: 0.4s;
+}
+
+.moreInforBox:hover {
+  transform: scale(1.01) translateX(-50%);
+  box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.5), -1px -1px 10px rgba(0, 0, 0, 0.5);
+}
+
+.moreInforBox .buttonStyle {
+  padding: 20px 30px;
+  font-size: 18px;
+}
+
+.moreInforBox p {
+  text-transform: uppercase;
+  margin-top: 15px;
+  font-size: 16px;
+}
+
+.briefingSection {
+  height: 100vh;
+  width: 100%;
+  /* background-color: cadetblue; */
+  position: relative;
+}
+
+.briefingSection .imgDisplay {
+  height: 100%;
+  width: 40%;
+  background: antiquewhite
+    /* url("../assets/images/about_page_imgs/luxury_hotel.jpg") no-repeat center; */
+    url("../assets/images/mixed/339532965.jpg") no-repeat center;
+  background-size: cover;
+  position: absolute;
+  left: 15%;
+  top: 0;
+}
+
+.briefText {
+  height: 85%;
+  width: 35%;
+  background-color: #ffffff;
+  position: absolute;
+  right: 15%;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  transition: 0.4s;
+}
+
+.briefText p {
+  padding: 5%;
+  margin-bottom: 5%;
+}
+
+.briefText:hover {
+  transform: scale(1.01) translateY(-50%);
+  box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.5), -1px -1px 10px rgba(0, 0, 0, 0.5);
+}
+
+.teamSection {
+  height: 120vh;
+  width: 100%;
+}
+
+.teamSectionHeadings {
+  height: 25%;
+}
+
+.teamMembers {
+  height: 75%;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 25% 25% 25% 25%;
+  align-items: center;
+  justify-content: space-evenly;
+  padding: 0 10px;
+}
+
+.memberProfiles {
+  height: 80%;
+  margin: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  transition: 0.4s;
+}
+
+.memberProfiles:hover {
+  transform: scale(1.01);
+  box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.5), -1px -1px 10px rgba(0, 0, 0, 0.5);
+}
+
+.memberProfiles .memberImage {
+  height: 55%;
+  width: 100%;
+  background: #ffffff url("../assets/images/about_page_imgs/fayzulla.png")
+    no-repeat center;
+  background-size: cover;
+}
+
+.mohammadProfile .memberImage {
+  background: #ffffff url("../assets/images/about_page_imgs/mohammad.jpg")
+    no-repeat center 20%;
+  background-size: cover;
+}
+
+.saadProfile .memberImage {
+  background: #ffffff url("../assets/images/about_page_imgs/saad.jpg") no-repeat
+    center 20%;
+  background-size: cover;
+}
+
+.abdullahProfile .memberImage {
+  background: #ffffff url("../assets/images/about_page_imgs/abdul.jpg")
+    no-repeat center 20%;
+  background-size: cover;
+}
+
+.memberInfo {
+  height: 45%;
+  width: 100%;
+  /* background-color: skyblue; */
+  padding-top: 10px;
+}
+
+.memberInfo h2 {
+  font-family: "Montserrat", serif;
+  font-size: 20px;
+  text-transform: capitalize;
+  margin-top: 5%;
+}
+
+.memberInfo h3 {
+  font-family: "Montserrat", serif;
+  font-size: 14px;
+  text-transform: uppercase;
+  padding: 0px;
+  position: relative;
+}
+
+.memberInfo h3::before,
+.memberInfo h3::after {
+  content: "";
+  height: 0.5px;
+  width: 10%;
+  background-color: #000000;
+  position: absolute;
+  top: 50%;
+  right: 10%;
+  z-index: 1;
+}
+
+.memberInfo h3::before {
+  left: 10%;
+}
+
+.newsLetterSection {
+  height: 50vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.newsLetterContainer {
+  height: 100%;
+  width: 90%;
+  position: relative;
+  box-shadow: 0px 0px 1px rgba(0, 0, 0, 0.5);
+  transition: 0.4s;
+}
+
+.newsLetterImage {
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: 2;
+  height: 100%;
+  width: 40%;
+  object-fit: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.newsLetterImage img {
+  height: 90%;
+  width: 70%;
+  object-fit: cover;
+}
+
+.newLetterContent {
+  height: 100%;
+  width: 60%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.newLetterContent h1 {
+  font-size: 40px;
+  text-align: left;
+  margin: 10px 0px;
+}
+
+.newLetterContent p {
+  font-size: 16px;
+  text-align: left;
+  margin: 10px 0px;
+}
+
+.subscriptionBox {
+  /* height: 100px; */
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+
+#subscriptionEmail {
+  display: inline-block;
+  padding: 10px;
+  height: 40px;
+  width: 300px;
+  outline: none;
+  border: 1px solid #000000;
+  background-color: transparent;
+}
+
+#subscribeBtn {
+  height: 50px;
+  width: 150px;
+  margin-left: 40px;
+  outline: none;
+}
+
+@media only screen and (max-width: 1080px) {
+  .headingSection h1 {
+    font-size: 50px;
+  }
+  .teamSection {
+    height: auto;
+  }
+
+  .teamMembers {
+    height: 150vh;
+    grid-template-columns: 30% 30%;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .headingSection h1 {
+    font-size: 40px;
+  }
+
+  .briefingSection .imgDisplay {
+    width: 90%;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  .briefText {
+    width: 80%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  .briefText:hover {
+    transform: scale(1.01) translate(-50%, -50%);
+    box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.5),
+      -1px -1px 10px rgba(0, 0, 0, 0.5);
+  }
+
+  .teamMembers {
+    height: 400vh;
+    grid-template-columns: 70%;
+  }
+  .newsLetterContainer {
+    box-shadow: none;
+  }
+
+  .newsLetterContainer:hover {
+    transform: scale(1);
+    box-shadow: none;
+  }
+
+  .newsLetterImage {
+    display: none;
+  }
+
+  .newLetterContent {
+    width: 100%;
+    left: 0;
+  }
+
+  .newLetterContent h1,
+  .newLetterContent p {
+    text-align: center;
+  }
+
+  .subscriptionBox {
+    justify-content: center;
+  }
+}

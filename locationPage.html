@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<!-- The HTML5 doctype declaration -->
+<html lang="en">
+
+<head>
+  <!-- The character encoding for the document is set to UTF-8 -->
+  <meta charset="UTF-8" />
+  <!-- The viewport meta tag to control layout on mobile devices -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- Tells Internet Explorer to use the latest rendering engine -->
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <link rel="shortcut icon" type="img/png" href="./assets/images/fss_logo.png">
+  <!-- Linking to Font Awesome for icons -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
+    integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous" />
+  <!-- Linking to Google Fonts for the Dosis font family -->
+  <link href="https://fonts.googleapis.com/css?family=Dosis" rel="stylesheet" />
+  <!-- Linking to the location.css stylesheet -->
+  <link rel="stylesheet" href="./styles/locationPageStyles.css" />
+  <!-- Setting the title of the webpage -->
+  <link rel="stylesheet" href="./styles/navigationStyle.css" />
+  <link rel="stylesheet" href="./styles/footerMenu.css" />
+  <title>Rooms | Four Season Suites</title>
+</head>
+
+<body>
+  <header>
+    <nav id="navBar">
+      <a href="homePage.html" id="navLogo">
+        <img src="assets/images/fss_logo.png" alt="Website Logo">
+      </a>
+      <div class="navLinksContainer" id="smallDeviceMenu">
+        <div id="smallDeviceMenuBar">
+          <i class="fa-solid fa-xmark" onclick="hideMenu()"></i>
+          <span> Menu </span>
+        </div>
+        <ul id="navItems">
+          <li><a href="aboutPage.html"> about </a></li>
+          <li><a href="contactPage.html"> contact</a></li>
+          <li><a href="overviewPage.html"> overview </a></li>
+          <li><a href="locationPage.html"> rooms</a></li>
+          <li><a href="restaurantPage.html"> restaurants </a></li>
+          <li><a href="loginPage.html"> login </a></li>
+          <li><a href="homePage.html"> home </a></li>
+        </ul>
+      </div>
+      <i class="fa-solid fa-bars" onclick="showMenu()"></i>
+    </nav>
+    <!-- -------------------------------------------------------------------------------------------- -->
+  </header>
+
+
+  <!-- Section A: Gallery -->
+  <section id="work-a" class="text-center py-3">
+    <!-- Container to hold the contents of the section -->
+    <div class="container">
+      <!-- Section title -->
+      <h2 class="section-title">Discover Your Ideal Room</h2>
+      <!-- Horizontal line below the section title -->
+      <div class="bottom-line"></div>
+      <!-- Lead paragraph describing the section -->
+      <p class="lead">
+        Unparalleled Comfort, Elegance, and Luxury Await in Our Diverse
+        Selection of Accommodations
+      </p>
+      <!-- Container to hold the room items -->
+      <div class="items">
+        <!-- Individual room item -->
+        <div class="item">
+          <!-- Room item image container -->
+          <div class="item-image">
+            <!-- Room item image -->
+            <img src="./assets/images/location_page_imgs/standard.png" alt="" />
+          </div>
+          <!-- Room item text container -->
+          <div class="item-text">
+            <!-- Room item text wrapper -->
+            <div class="item-text-wrap">
+              <!-- Room item category text -->
+              <p class="item-text-category">Four Season Suites</p>
+              <!-- Room item title -->
+              <h2 class="item-text-title">Standard Room</h2>
+              <!-- Room item booking button -->
+              <a href="standard_room.html" target="_blank" class="btn-light">Book Now</a>
+            </div>
+          </div>
+        </div>
+        <div class="item">
+          <div class="item-image">
+            <img src="./assets/images/location_page_imgs/deluxe.png" alt="" />
+          </div>
+          <div class="item-text">
+            <div class="item-text-wrap">
+              <p class="item-text-category">Four Season Suites</p>
+              <h2 class="item-text-title">Deluxe Room</h2>
+              <a href="deluxRoom.html" target="_blank" class="btn-light">Book Now</a>
+            </div>
+          </div>
+        </div>
+        <div class="item">
+          <div class="item-image">
+            <img src="./assets/images/location_page_imgs/suite.png" alt="" />
+          </div>
+          <div class="item-text">
+            <div class="item-text-wrap">
+              <p class="item-text-category">Four Season Suites</p>
+              <h2 class="item-text-title">Suite</h2>
+              <a href="suite_room.html" target="_blank" class="btn-light">Book Now</a>
+            </div>
+          </div>
+        </div>
+        <div class="item">
+          <div class="item-image">
+            <img src="./assets/images/location_page_imgs/executive1.jpeg" alt="" />
+          </div>
+          <div class="item-text">
+            <div class="item-text-wrap">
+              <p class="item-text-category">Four Season Suites</p>
+              <h2 class="item-text-title">Executive Room</h2>
+              <a href="executive_room.html" target="_blank" class="btn-light">Book Now</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <div id="hRuler"></div>
+  <!-- --------------------------Footer Part-------------------------------- -->
+  <footer>
+    <div class="footerMenu">
+      <div class="footerPages">
+        <h2> pages </h2>
+        <div class="footerMenuContents">
+          <div class="contentsLeft">
+            <a href="homePage.html">home </a>
+            <a href="aboutPage.html">about </a>
+            <a href="contactPage.html">contact </a>
+          </div>
+          <div class="contentsRight">
+            <a href="locationPage.html">rooms</a> </a>
+            <a href="restaurantPage.html">restaurants </a>
+            <a href="overviewPage.html">overview </a>
+          </div>
+        </div>
+
+
+      </div>
+      <div class="footerContactInfo">
+        <h2> contact us </h2>
+        <div class="footerMenuContents">
+          <div class="contentsLeft">
+            <a href="#">Address </a>
+            <a href="#">+44(0)7777888999 </a>
+            <a style="text-transform: none;" href="#">fss@fourseasonssuites.com </a>
+          </div>
+        </div>
+
+      </div>
+      <div class="footerSocialMedia">
+        <h2> follow us </h2>
+        <div class="footerMenuContents">
+          <div class="contentsLeft">
+            <a href="https://www.instagram.com/accounts/login/" target="_blank" alt="Instagram">instagram </a>
+            <a href="https://en-gb.facebook.com/" target="_blank" alt="Facebook">facebook </a>
+            <a href="https://twitter.com/i/flow/login" target="_blank" alt="Twitter">twitter </a>
+          </div>
+          <div class="contentsRight ">
+            <a href="https://www.instagram.com/accounts/login/" target="_blank" alt="instagram"><i
+                class="fa-brands fa-instagram"></i></a>
+            <a href="https://en-gb.facebook.com/" target="_blank" alt="facebook"><i class="fa-brands fa-facebook"></i>
+            </a>
+            <a href="https://twitter.com/i/flow/login" target="_blank" alt="twitter"><i
+                class="fa-brands fa-twitter"></i> </a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="copyrightBanner">
+      <p> &copy; Copyright four feasons suites 2023 </p>
+      <p> All rights reserved. </p>
+    </div>
+  </footer>
+  <script src="./scripts/navigationScript.js"></script>
+  <script src="https://kit.fontawesome.com/abd188e387.js" crossorigin="anonymous"></script>
+</body>
+
+</html>

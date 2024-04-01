@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Favicon icon that can be seen on as prefix of page title -->
+    <link rel="shortcut icon" type="img/png" href="assets/images/fss_logo.png">
+
+    <!-- Linking google used fonts and icons -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter&family=Montserrat&family=Newsreader&family=Quando&display=swap"
+        rel="stylesheet">
+
+    <!-- Linking the stylesheets -->
+    <link rel="stylesheet" type="text/css" href="./styles/contactPageStyles.css">
+    <link rel="stylesheet" type="text/css" href="./styles/navigationStyle.css">
+    <link rel="stylesheet" type="text/css" href="./styles/footerMenu.css">
+
+    <!-- Title of the page -->
+    <title>Contact US | Four Seasons Suites</title>
+
+</head>
+
+<body>
+    <!-- Creating the navigation bar -->
+    <header>
+        <nav id="navBar">
+            <a href="homePage.html" id="navLogo">
+                <img src="assets/images/fss_logo.png" alt="Website Logo">
+            </a>
+            <div class="navLinksContainer" id="smallDeviceMenu">
+                <div id="smallDeviceMenuBar">
+                    <i class="fa-solid fa-xmark" onclick="hideMenu()"></i>
+                    <span> Menu </span>
+                </div>
+                <ul id="navItems">
+                    <li><a href="aboutPage.html"> about </a></li>
+                    <li><a href="contactPage.html"> contact</a></li>
+                    <li><a href="overviewPage.html"> overview </a></li>
+                    <li><a href="locationPage.html"> rooms</a></li>
+                    <li><a href="restaurantPage.html"> restaurants </a></li>
+                    <li><a href="loginPage.html"> login </a></li>
+                    <li><a href="homePage.html"> home </a></li>
+                </ul>
+            </div>
+            <i class="fa-solid fa-bars" onclick="showMenu()"></i>
+        </nav>
+        <!-- -------------------------------------------------------------------------------------------- -->
+    </header>
+
+    <section class="topSection">
+        <!-- <div class="imagePart">
+            <img src="assets/images/contact_page_imgs/img1.png" alt="An Images">
+        </div> -->
+        <form class="formPart">
+            <div class="formPartition">
+                <div class="userInfo">
+                    <div class="nameBox boxes">
+                        <label for="userName">Your name: </label> <br>
+                        <input type="text" id="userName" name="user-name" required>
+                    </div>
+                    <div class="emailBox boxes">
+                        <label for="userEmail">Email:</label> <br>
+                        <input type="email" id="userEmail" name="user-email" required>
+                    </div>
+                    <div class="phoneBox boxes">
+                        <label for="userPhone">Your phone:</label><br>
+                        <input type="tel" id="userPhone" name="userPhone" placeholder="+44" required>
+                    </div>
+                    <div class="inquiryBox boxes">
+                        <label for="userInquiries"> Inquiry Type: </label><br>
+                        <select id="userInquiries" name="user-inquiry" required>
+                            <option value="" selected>Choose an option</option>
+                            <option>Payment</option>
+                            <option>Payment</option>
+                            <option>Payment</option>
+                            <option>Payment</option>
+                            <option>Payment</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="messageBox">
+                    <label for="userMessage">Please write your message : </label> <br>
+                    <textarea id="userMessage" name="message"></textarea>
+                </div>
+                <div class="submitBtnBox">
+                    <input class="buttonStyle" type="submit" value="Submit">
+                </div>
+            </div>
+        </form>
+    </section>
+
+
+
+
+    <section class="mapSection">
+        <div class="actualMap mapSecItem">
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d14035.94379801791!2d0.07940148199963334!3d51.54572248752502!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2suk!4v1680381429176!5m2!1sen!2suk"
+                style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+        <div class="mapText  mapSecItem">
+            <h2> Our hotel is fantasy kindom located in the <br>
+                epicenter of the four exciting cities in the united <br>
+                kindom
+            </h2>
+            <button class="buttonStyle">Where to find us</button>
+        </div>
+    </section>
+
+    <div id="hRuler"></div>
+    <!-- --------------------------Footer Part-------------------------------- -->
+    <footer>
+        <div class="footerMenu">
+            <div class="footerPages">
+                <h2> pages </h2>
+                <div class="footerMenuContents">
+                    <div class="contentsLeft">
+                        <a href="homePage.html">home </a>
+                        <a href="aboutPage.html">about </a>
+                        <a href="contactPage.html">contact </a>
+                    </div>
+                    <div class="contentsRight">
+                        <a href="locationPage.html">rooms</a> </a>
+                        <a href="restaurantPage.html">restaurants </a>
+                        <a href="overviewPage.html">overview </a>
+                    </div>
+                </div>
+
+
+            </div>
+            <div class="footerContactInfo">
+                <h2> contact us </h2>
+                <div class="footerMenuContents">
+                    <div class="contentsLeft">
+                        <a href="#">Address </a>
+                        <a href="#">+44(0)7777888999 </a>
+                        <a style="text-transform: none;" href="#">fss@fourseasonssuites.com </a>
+                    </div>
+                </div>
+
+            </div>
+            <div class="footerSocialMedia">
+                <h2> follow us </h2>
+                <div class="footerMenuContents">
+                    <div class="contentsLeft">
+                        <a href="https://www.instagram.com/accounts/login/" target="_blank" alt="Instagram">instagram
+                        </a>
+                        <a href="https://en-gb.facebook.com/" target="_blank" alt="Facebook">facebook </a>
+                        <a href="https://twitter.com/i/flow/login" target="_blank" alt="Twitter">twitter </a>
+                    </div>
+                    <div class="contentsRight ">
+                        <a href="https://www.instagram.com/accounts/login/" target="_blank" alt="instagram"><i
+                                class="fa-brands fa-instagram"></i></a>
+                        <a href="https://en-gb.facebook.com/" target="_blank" alt="facebook"><i
+                                class="fa-brands fa-facebook"></i> </a>
+                        <a href="https://twitter.com/i/flow/login" target="_blank" alt="twitter"><i
+                                class="fa-brands fa-twitter"></i> </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="copyrightBanner">
+            <p> &copy; Copyright four feasons suites 2023 </p>
+            <p> All rights reserved. </p>
+        </div>
+    </footer>
+
+    <!-- Linking the javascript files -->
+    <script src="https://kit.fontawesome.com/abd188e387.js" crossorigin="anonymous"></script>
+    <script src="./scripts/navigationScript.js"></script>
+</body>
+
+</html>

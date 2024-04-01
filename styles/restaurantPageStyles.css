@@ -1,0 +1,68 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: #000000;
+    font-family: 'Newsreader', serif;
+}
+
+/* -----------------General styles---------------------------- */
+body {
+    background-color: #ffffff;
+}
+
+.restaurntImage{
+    height: 150vh;
+    width: 100%;
+}
+.restImage{
+    height: 100vh;
+    width: 100%;
+    background: cadetblue url('../assets/images/restaurant_page_imgs/rest_img.jpg') no-repeat center;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.restInfoPart{
+    height: 50vh;
+    width: 100%;
+    padding: 20px 5%;
+}
+.restNameRatings{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0px;
+}
+.restNameRatings h1{
+    padding-top: 10px;
+    text-transform: uppercase;
+}
+.restNameRatings i{
+    color: darkblue;
+}
+.restInfoPart p{
+    text-align: left;
+    padding: 10px 0px;
+}
+.bookCallBtnsBox{
+    padding: 10px 0px;
+}
+
+.bookCallBtnsBox button{
+    padding: 8px 30px;
+    border: solid 1px #000000;
+    text-transform: uppercase;
+    background-color: #000000;
+    color: #ffffff;
+    transition: 0.4s;
+}
+.bookCallBtnsBox button:nth-child(2){
+    margin-left: 50px;
+}
+.bookCallBtnsBox button:hover{
+    background-color: #ffffff;
+    color: #000000;
+}

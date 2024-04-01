@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="shortcut icon" type="img/png" href="./assets/images/fss_logo.png">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css"
+    integrity="sha256-h20CPZ0QyXlBuAw7A+KluUYx/3pK+c7lYEpqLTlxjYQ=" crossorigin="anonymous" />
+  <link rel="stylesheet" href="./styles/navigationStyle.css">
+  <link rel="stylesheet" href="./styles/footerMenu.css">
+  <link rel="stylesheet" href="./styles/bookingBox.css">
+  <link rel="stylesheet" href="./styles/lightbox.min.css" />
+  <link rel="stylesheet" href="./styles/utilities.css" />
+  <link rel="stylesheet" href="./styles/style.css" />
+  <link rel="stylesheet" href="./styles/locationPageStyles.css" />
+  <link rel="stylesheet" href="lightbox2/dist/css/lightbox.min.css">
+  <link rel="stylesheet" href="./styles/lightbox.css">
+  <title>Standard Rooms | Four Season Suites</title>
+</head>
+<!-- The body element is the container for all the content on the web page, with an ID of "home" -->
+
+<body id="home">
+  <header>
+    <nav id="navBar">
+      <a href="homePage.html" id="navLogo">
+        <img src="assets/images/fss_logo.png" alt="Website Logo">
+      </a>
+      <div class="navLinksContainer" id="smallDeviceMenu">
+        <div id="smallDeviceMenuBar">
+          <i class="fa-solid fa-xmark" onclick="hideMenu()"></i>
+          <span> Menu </span>
+        </div>
+        <ul id="navItems">
+          <li><a href="aboutPage.html"> about </a></li>
+          <li><a href="contactPage.html"> contact</a></li>
+          <li><a href="overviewPage.html"> overview </a></li>
+          <li><a href="locationPage.html"> rooms</a></li>
+          <li><a href="restaurantPage.html"> restaurants </a></li>
+          <li><a href="loginPage.html"> login </a></li>
+          <li><a href="homePage.html"> home </a></li>
+        </ul>
+      </div>
+      <i class="fa-solid fa-bars" onclick="showMenu()"></i>
+    </nav>
+  </header>
+    <!-- -------------------------------------------------------------------------------------------- -->
+  <!-- -------------Creating the booking box--------------------------- -->
+  <div id="clickOutsideToClose" onclick="closeBookingBox()" class="blurryBg">
+  </div>
+  <div class="popUpBookingBox">
+    <form class="bookingBox" action="/submit" method="post">
+      <div id="closeBtn"><i class="fa-solid fa-xmark" onclick="closeBookingBox()"></i></div>
+      <!-- Check in, check out part -->
+      <div class="bookingBoxTop">
+        <div class="checkIn bookingBoxParts">
+          <label for="checkInDate">check in</label>
+          <input type="date" id="checkInDate" name="checkInDate" value="2023/0/12" required>
+          <input type="time" id="checkInTime" name="checkInTime" value="02:00" step="3600" required>
+        </div>
+        <div class="checkOut bookingBoxParts">
+          <label for="checkOutDate">check out</label>
+          <input type="date" id="checkOutDate" name="checkOutDate" required>
+          <input type="time" id="checkOutTime" name="checkOutTime" value="02:00" step="3600" required>
+        </div>
+      </div>
+      <!-- ---------------------------------- -->
+      <div class="roomTypeLocation">
+        <div class="roomType">
+          <label for="roomType"> Room Type: </label><br>
+          <select id="roomType" name="Room type" required>
+            <option value="" selected>Choose an option</option>
+            <option>Standard</option>
+            <option>Economy</option>
+            <option>Delux</option>
+            <option>Premium</option>
+          </select>
+        </div>
+        <div class="roomLocation">
+          <label for="userInquiries"> Room Location: </label><br>
+          <select id="userInquiries" name="user-inquiry" required>
+            <option value="" selected>Choose an option</option>
+            <option>London</option>
+            <option>Manchester</option>
+            <option>Bristol</option>
+            <option>Liverpool</option>
+          </select>
+        </div>
+      </div>
+      <div class="bookingSubmitBox">
+        <button id="bookingSubmitId" class="buttonStyle"> Book </button>
+      </div>
+    </form>
+  </div>
+  <!-- ---------------Booking box end------------------ -->
+  <header class="hero">
+    <div class="content">
+      <h1>Standard Room</h1>
+      <p>Our Spacious and Elegant Rooms</p>
+      <div onclick="showBookingBox()"><a href="#" class="btn-light">Book Now</a></div>
+    </div>
+  </header>
+
+
+  <div id="hRuler"></div>
+
+  <main>
+    <!-- About: Icons -->
+    <section id="about" class="icons bg-light">
+      <div class="flex-items">
+        <div>
+          <i class="fas fa-bed fa-2x"></i>
+          <div>
+            <h3>Comfortable Dedding</h3>
+            <p>
+              Enjoy a restful night's sleep on high-quality mattresses, plush
+              pillows, and premium linens for ultimate comfort.
+            </p>
+          </div>
+        </div>
+        <div>
+          <i class="fas fa-shower fa-2x"></i>
+          <div>
+            <h3>En-suite Bathroom</h3>
+            <p>
+              Experience convenience and privacy with a modern en-suite
+              bathroom, featuring a shower, bathtub, and complimentary
+              toiletries.
+            </p>
+          </div>
+        </div>
+        <div>
+          <i class="fas fa-tv fa-2x"></i>
+          <div>
+            <h3>Climate Control</h3>
+            <p>
+              Stay comfortable with individually controlled air conditioning
+              and heating systems, ensuring the perfect temperature for
+              relaxation.
+            </p>
+          </div>
+        </div>
+        <div>
+          <i class="fas fa-wifi fa-2x"></i>
+          <div>
+            <h3>High-speed Wi-Fi</h3>
+            <p>
+              Remain connected during your stay with complimentary high-speed
+              Wi-Fi, perfect for business travelers and vacationers alike.
+            </p>
+          </div>
+        </div>
+        <div>
+          <i class="fas fa-tv fa-2x"></i>
+          <div>
+            <h3>In-room entertainment</h3>
+            <p>
+              Unwind with a flat-screen TV offering a wide selection of local
+              and international channels, as well as on-demand movies and
+              streaming services.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <div id="hRuler"></div>
+    <!-- About:Solutions -->
+    <section class="solutions flex-columns">
+      <div class="row">
+        <div class="column">
+          <div class="column-1">
+            <img src="./assets/images/standard_page_imgs/room3.jpg" alt="" />
+          </div>
+        </div>
+        <div class="column">
+          <div class="column-2 bg-primary">
+            <h4>What you are looking for</h4>
+            <h2>Standard Room</h2>
+            <p>
+              Our cozy and inviting Standard Room offers a comfortable
+              retreat, featuring a plush bed, en-suite bathroom, and essential
+              amenities. Enjoy the convenience of high-speed Wi-Fi and in-room
+              entertainment for a relaxing and affordable stay.
+            </p>
+            <a href="#" class="btn-light">Book Now</a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- About:Solutions -->
+    <section class="solutions flex-columns">
+      <div class="row">
+        <div class="column">
+          <div class="column-2 bg-primary">
+            <h4>What you are looking for</h4>
+            <h2>Standard Room</h2>
+            <p>
+              Our cozy and inviting Standard Room offers a comfortable
+              retreat, featuring a plush bed, en-suite bathroom, and essential
+              amenities. Enjoy the convenience of high-speed Wi-Fi and in-room
+              entertainment for a relaxing and affordable stay.
+            </p>
+            <a href="#" class="btn-light">Book Now</a>
+          </div>
+        </div>
+        <div class="column">
+          <div class="column-1">
+            <img src="./assets/images/standard_page_imgs/room5.jpg" alt="" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div id="hRuler"></div>
+
+    <!-- Cases -->
+    <section id="cases" class="cases flex-grid section-padding">
+      <header class="section-header">
+        <h4>Four Season Suites</h4>
+        <h2>Room Gallery Preview</h2>
+        <p>
+          Browse through our room gallery to discover the elegant design,
+          modern amenities, and comfortable furnishings that await you in our
+          inviting guest rooms, designed for a truly relaxing and memorable
+          stay.
+        </p>
+      </header>
+
+      <div class="grid-gallery">
+        <div class="grid-item">
+          <a href="./assets/images/standard_page_imgs/room4.jpg" data-lightbox="gridImage">
+            <img src="./assets/images/standard_page_imgs/room4.jpg" />
+          </a>
+        </div>
+        <div class="grid-item">
+          <a href="./assets/images/standard_page_imgs/room3.jpg" data-lightbox="gridImage">
+            <img src="./assets/images/standard_page_imgs/room3.jpg" />
+          </a>
+        </div>
+        <div class="grid-item">
+          <a href="./assets/images/standard_page_imgs/rooom10.jpg" data-lightbox="gridImage">
+            <img src="./assets/images/standard_page_imgs/rooom10.jpg" />
+          </a>
+        </div>
+        <div class="grid-item">
+          <a href="./assets/images/standard_page_imgs/room5.jpg" data-lightbox="gridImage">
+            <img src="./assets/images/standard_page_imgs/room5.jpg" />
+          </a>
+        </div>
+        <div class="grid-item">
+          <a href="./assets/images/standard_page_imgs/room8.jpg" data-lightbox="gridImage">
+            <img src="./assets/images/standard_page_imgs/room8.jpg" />
+          </a>
+        </div>
+        <div class="grid-item">
+          <a href="./assets/images/standard_page_imgs/rooom9.jpg" data-lightbox="gridImage">
+            <img src="./assets/images/standard_page_imgs/rooom9.jpg" />
+          </a>
+        </div>
+        <div class="grid-item">
+          <a href="./assets/images/standard_page_imgs/bathroom.jpg" data-lightbox="gridImage">
+            <img src="./assets/images/standard_page_imgs/bathroom.jpg" />
+          </a>
+        </div>
+        <div class="grid-item">
+          <a href="./assets/images/standard_page_imgs/bathroom2.jpg" data-lightbox="gridImage">
+            <img src="./assets/images/standard_page_imgs/bathroom2.jpg" />
+          </a>
+        </div>
+        <div class="grid-item">
+          <a href="./assets/images/standard_page_imgs/bathhroom3.jpg" data-lightbox="gridImage">
+            <img src="./assets/images/standard_page_imgs/bathhroom3.jpg" />
+          </a>
+        </div>
+        <div class="grid-item">
+          <a href="./assets/images/standard_page_imgs/restroom.jpg" data-lightbox="gridImage">
+            <img src="./assets/images/standard_page_imgs/restroom.jpg" />
+          </a>
+        </div>
+        <div class="grid-item">
+          <a href="./assets/images/standard_page_imgs/449319561.jpg" data-lightbox="gridImage">
+            <img src="./assets/images/standard_page_imgs/449319561.jpg" />
+          </a>
+        </div>
+        <div class="grid-item">
+          <a href="./assets/images/standard_page_imgs/449319562.jpg" data-lightbox="gridImage">
+            <img src="./assets/images/standard_page_imgs/449319562.jpg" />
+          </a>
+        </div>
+        <div class="grid-item">
+          <a href="./assets/images/standard_page_imgs/room2.jpg" data-lightbox="gridImage">
+            <img src="./assets/images/standard_page_imgs/room2.jpg" />
+          </a>
+        </div>
+        <div class="grid-item">
+          <a href="./assets/images/standard_page_imgs/cafe.jpg" data-lightbox="gridImage">
+            <img src="./assets/images/standard_page_imgs/cafe.jpg" />
+          </a>
+        </div>
+        <div class="grid-item">
+          <a href="./assets/images/standard_page_imgs/restroom.jpg" data-lightbox="gridImage">
+            <img src="./assets/images/standard_page_imgs/restroom.jpg" />
+          </a>
+        </div>
+        <div class="grid-item">
+          <a href="./assets/images/standard_page_imgs/swimming.jpg" data-lightbox="gridImage">
+            <img src="./assets/images/standard_page_imgs/swimming.jpg" />
+          </a>
+        </div>
+        <div class="grid-item">
+          <a href="./assets/images/standard_page_imgs/gym.jpg" data-lightbox="gridImage">
+            <img src="./assets/images/standard_page_imgs/gym.jpg" />
+          </a>
+        </div>
+        <div class="grid-item">
+          <a href="./assets/images/standard_page_imgs/gym2.jpg" data-lightbox="gridImage">
+            <img src="./assets/images/standard_page_imgs/gym2.jpg" />
+          </a>
+        </div>
+      </div>
+      <!-- jQuery CDN Link -->
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+      <!-- Lightbox JS -->
+      <script src="lightbox2/dist/js/lightbox.min.js"></script>
+      <!-- Custom js -->
+      <script src="js/main.js"></script>
+  </main>
+
+  <div id="hRuler"></div>
+
+  <!-- --------------------------Footer Part-------------------------------- -->
+  <footer>
+    <div class="footerMenu">
+      <div class="footerPages">
+        <h2> pages </h2>
+        <div class="footerMenuContents">
+          <div class="contentsLeft">
+            <a href="homePage.html">home </a>
+            <a href="aboutPage.html">about </a>
+            <a href="contactPage.html">contact </a>
+          </div>
+          <div class="contentsRight">
+            <a href="locationPage.html">rooms</a> </a>
+            <a href="restaurantPage.html">restaurants </a>
+            <a href="overviewPage.html">overview </a>
+          </div>
+        </div>
+
+
+      </div>
+      <div class="footerContactInfo">
+        <h2> contact us </h2>
+        <div class="footerMenuContents">
+          <div class="contentsLeft">
+            <a href="#">Address </a>
+            <a href="#">+44(0)7777888999 </a>
+            <a style="text-transform: none;" href="#">fss@fourseasonssuites.com </a>
+          </div>
+        </div>
+
+      </div>
+      <div class="footerSocialMedia">
+        <h2> follow us </h2>
+        <div class="footerMenuContents">
+          <div class="contentsLeft">
+            <a href="https://www.instagram.com/accounts/login/" target="_blank" alt="Instagram">instagram </a>
+            <a href="https://en-gb.facebook.com/" target="_blank" alt="Facebook">facebook </a>
+            <a href="https://twitter.com/i/flow/login" target="_blank" alt="Twitter">twitter </a>
+          </div>
+          <div class="contentsRight ">
+            <a href="https://www.instagram.com/accounts/login/" target="_blank" alt="instagram"><i
+                class="fa-brands fa-instagram"></i></a>
+            <a href="https://en-gb.facebook.com/" target="_blank" alt="facebook"><i class="fa-brands fa-facebook"></i>
+            </a>
+            <a href="https://twitter.com/i/flow/login" target="_blank" alt="twitter"><i
+                class="fa-brands fa-twitter"></i> </a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="copyrightBanner">
+      <p> &copy; Copyright four feasons suites 2023 </p>
+      <p> All rights reserved. </p>
+    </div>
+  </footer>
+
+  <script src="./scripts/navigationScript.js"></script>
+  <script src="./scripts/bookingBox.js"></script>
+  <script src="https://kit.fontawesome.com/abd188e387.js" crossorigin="anonymous"></script>
+</body>
+
+</html>

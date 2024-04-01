@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!-- Meta tags for character encoding and viewport settings -->
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link style="border-radius: 10%;" rel="shortcut icon" type="img/png" href="assets/images/fss_logo.png">
+  <!-- Title of the page -->
+  <!-- Link to the signup page's CSS file -->
+  <link rel="stylesheet" href="./styles/signUpStyles.css" />
+  <!-- Link to the Font Awesome library (only one link needed) -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css"
+    integrity="sha384-KyZXEAg3QhqLMpG8r+Knujsl7/1L_dstPt3HV5HzF6Gvk/e9L9+EZMlGOeB4Y4Jp" crossorigin="anonymous" />
+  <link rel="stylesheet" href="./styles/locationPageStyles.css" />
+  <link rel="stylesheet" href="./styles/navigationStyle.css" />
+  <link rel="stylesheet" href="./styles/footerMenu.css" />
+
+  <title>Sign Up | Four Season Suites</title>
+</head>
+
+<body>
+  <header>
+    <nav id="navBar">
+      <a href="homePage.html" id="navLogo">
+        <img src="assets/images/fss_logo.png" alt="Website Logo">
+      </a>
+      <div class="navLinksContainer" id="smallDeviceMenu">
+        <div id="smallDeviceMenuBar">
+          <i class="fa-solid fa-xmark" onclick="hideMenu()"></i>
+          <span> Menu </span>
+        </div>
+        <ul id="navItems">
+          <li><a href="aboutPage.html"> about </a></li>
+          <li><a href="contactPage.html"> contact</a></li>
+          <li><a href="overviewPage.html"> overview </a></li>
+          <li><a href="locationPage.html"> rooms</a></li>
+          <li><a href="restaurantPage.html"> restaurants </a></li>
+          <li><a href="loginPage.html"> login </a></li>
+          <li><a href="homePage.html"> home </a></li>
+        </ul>
+      </div>
+      <i class="fa-solid fa-bars" onclick="showMenu()"></i>
+    </nav>
+    <!-- -------------------------------------------------------------------------------------------- -->
+  </header>
+  <!-- Cover container for the signup page -->
+  <div class="cover">
+    <div class="container">
+      <div class="signup-form">
+        <!-- Signup form heading -->
+        <h1>Create account</h1>
+        <!-- Login link for users who already have an account -->
+        <div class="login-link">
+          Already have an account? <a href="loginPage.html">Log in</a>
+        </div>
+        <!-- Signup form -->
+        <form>
+          <!-- Email input field with icon -->
+          <div class="input-group">
+            <i class="fas fa-envelope"></i>
+            <input type="email" name="email" placeholder="Email address" required />
+          </div>
+          <!-- Password input field with icon -->
+          <div class="input-group">
+            <i class="fas fa-lock"></i>
+            <input type="password" name="password" placeholder="Password" required />
+          </div>
+          <!-- Confirm password input field with icon -->
+          <div class="input-group">
+            <i class="fas fa-lock"></i>
+            <input type="password" name="password-confirm" placeholder="Confirm Password" required />
+          </div>
+          <!-- Submit button -->
+          <button type="submit">Create account</button>
+        </form>
+        <!-- Divider with 'or' text -->
+        <div class="divider">
+          <span></span>
+        </div>
+        <!-- Social login buttons -->
+        <div class="social-login">
+          <button class="google">
+            <i class="fab fa-google"></i> Continue with Google
+          </button>
+          <button class="facebook">
+            <i class="fab fa-facebook"></i> Continue with Facebook
+          </button>
+        </div>
+        <!-- Terms and Privacy Policy text -->
+        <p class="terms">
+          * By signing up, you agree to our <a href="#">Terms of Use</a> and
+          acknowledge you've read our <a href="#">Privacy Policy</a>.
+        </p>
+      </div>
+    </div>
+  </div>
+  <div id="hRuler"></div>
+  <!-- --------------------------Footer Part-------------------------------- -->
+  <footer>
+    <div class="footerMenu">
+      <div class="footerPages">
+        <h2> pages </h2>
+        <div class="footerMenuContents">
+          <div class="contentsLeft">
+            <a href="homePage.html">home </a>
+            <a href="aboutPage.html">about </a>
+            <a href="contactPage.html">contact </a>
+          </div>
+          <div class="contentsRight">
+            <a href="locationPage.html">rooms</a> </a>
+            <a href="restaurantPage.html">restaurants </a>
+            <a href="overviewPage.html">overview </a>
+          </div>
+        </div>
+
+
+      </div>
+      <div class="footerContactInfo">
+        <h2> contact us </h2>
+        <div class="footerMenuContents">
+          <div class="contentsLeft">
+            <a href="#">Address </a>
+            <a href="#">+44(0)7777888999 </a>
+            <a style="text-transform: none;" href="#">fss@fourseasonssuites.com </a>
+          </div>
+        </div>
+
+      </div>
+      <div class="footerSocialMedia">
+        <h2> follow us </h2>
+        <div class="footerMenuContents">
+          <div class="contentsLeft">
+            <a href="https://www.instagram.com/accounts/login/" target="_blank" alt="Instagram">instagram </a>
+            <a href="https://en-gb.facebook.com/" target="_blank" alt="Facebook">facebook </a>
+            <a href="https://twitter.com/i/flow/login" target="_blank" alt="Twitter">twitter </a>
+          </div>
+          <div class="contentsRight ">
+            <a href="https://www.instagram.com/accounts/login/" target="_blank" alt="instagram"><i
+                class="fa-brands fa-instagram"></i></a>
+            <a href="https://en-gb.facebook.com/" target="_blank" alt="facebook"><i class="fa-brands fa-facebook"></i>
+            </a>
+            <a href="https://twitter.com/i/flow/login" target="_blank" alt="twitter"><i
+                class="fa-brands fa-twitter"></i> </a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="copyrightBanner">
+      <p> &copy; Copyright four feasons suites 2023 </p>
+      <p> All rights reserved. </p>
+    </div>
+  </footer>
+  <script src="./scripts/navigationScript.js"></script>
+  <script src="https://kit.fontawesome.com/abd188e387.js" crossorigin="anonymous"></script>
+</body>
+
+</html>
